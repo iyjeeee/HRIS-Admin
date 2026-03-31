@@ -1,6 +1,6 @@
 // profile.jsx — Admin Profile Page
 import React, { useState } from 'react';
-import { Edit3, User, ShieldCheck, Activity } from 'lucide-react';
+import { User, ShieldCheck, Activity } from 'lucide-react';
 import StatCard        from '../../components/statCard.jsx';
 import BasicInfoTab    from './tabs/basicInfoTab.jsx';
 import AdminInfoTab    from './tabs/adminInfoTab.jsx';
@@ -64,11 +64,9 @@ const Profile = () => {
             </div>
           </div>
 
-          {/* Right side — edit button + tenure */}
+          {/* Right side — tenure */}
           <div className="text-right space-y-3">
-            <button className="flex items-center gap-2 px-4 py-2 border border-yellow-500 text-yellow-600 rounded-lg text-xs font-bold hover:bg-yellow-50 transition-colors cursor-pointer ml-auto">
-              <Edit3 size={14} /> Edit Profile
-            </button>
+
             <div>
               {/* Tenure display */}
               <p className="text-xl font-bold text-yellow-500 leading-none">2 Years 2 Months</p>
